@@ -1,0 +1,22 @@
+@import '../../variables.css';
+.test {
+    color: var(--secundario);
+}
+
+.body-content {
+    background-image: url('../../assets/BG1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 80vh;
+}
+
+hr#about {
+    height: 2px;
+    width: 40px;
+    border-width: 0;
+    color: gray;
+    background-color: gray;
+    text-align: left;
+    margin-left: 0;
+    margin-right: 10px;
+}

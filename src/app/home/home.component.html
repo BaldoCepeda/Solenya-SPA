@@ -1,18 +1,33 @@
-<div class="container mt-5">
-  <div *ngIf="!registerMode" style="text-align: center">
-    <h1>Find your match</h1>
-    <p class="lead">Come on in to view your matches... All you need to do is sign up!</p>
-    <div class="text-center">
-      <button class="btn btn-primary btn-lg mr-2" (click)="registerToggle()">Register</button>
-      <button class="btn btn-info btn-lg">Learn more</button>
+<div class="body-content pt-5 px-5" *ngIf="!registerMode" style="text-align: center">
+  <h1 class="test">Find your match</h1>
+  <p class="lead">Come on in to view your matches... All you need to do is sign up!</p>
+  <div class="text-center">
+    <button class="btn btn-primary btn-lg mr-2" (click)="registerToggle()">Register</button>
+    <button class="btn btn-info btn-lg">Learn more</button>
+  </div>
+</div>
+
+<div *ngIf="registerMode" class="container">
+  <div class="row justify-content-center">
+    <div class="col-4">
+      <app-register (cancelRegister)="cancelRegisterMode($event)"></app-register>
     </div>
   </div>
+</div>
 
-  <div *ngIf="registerMode" class="container">
-    <div class="row justify-content-center">
-      <div class="col-4">
-        <app-register (cancelRegister)="cancelRegisterMode($event)"></app-register>
-      </div>
+<div class="aboutSection d-flex flex-wrap">
+  <img src="../../assets/suitMan.jpg" style="width: 40%;" alt="Suitman">
+  <div class="p-4" style="width: 59%;">
+    <div class="d-flex flex-wrap">
+      <hr id="about">
+      <p>About us</p>
     </div>
+    <h3>Welcome to Solenya<span>.</span></h3>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ornare odio elit, et tincidunt enim pharetra
+      ut. Vivamus blandit massa ac lorem consectetur dictum. Cras et semper lacus. Proin non arcu elit. Mauris nec
+      felis nec mi rutrum tempor. Pellentesque non augue ac orci finibus scelerisque sit amet quis turpis. Integer et
+      dolor magna. Suspendisse sit amet cursus elit, eget luctus nisi. Praesent blandit blandit ipsum ac scelerisque.
+      Donec commodo ullamcorper dui in sollicitudin.
+    </p>
   </div>
 </div>
