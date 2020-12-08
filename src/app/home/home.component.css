@@ -1,6 +1,10 @@
 @import '../../variables.css';
-.test {
-    color: var(--secundario);
+.title1 {
+    color: #232428;
+}
+
+.lead {
+    color: #232428;
 }
 
 .body-content {
@@ -8,6 +12,10 @@
     background-repeat: no-repeat;
     background-size: cover;
     height: 80vh;
+}
+
+p, h3 {
+    font-family: 'Poppins', sans-serif;
 }
 
 hr#about {
@@ -19,4 +27,16 @@ hr#about {
     text-align: left;
     margin-left: 0;
     margin-right: 10px;
+}
+
+.pill-btn {
+    border-radius: 4em;
+}
+
+.registerbtn {
+    background-color: #2635a6;
+}
+
+.learnbtn {
+    background-color: #4dccbd;
 }
